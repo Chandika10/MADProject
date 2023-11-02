@@ -19,7 +19,8 @@ class ExploreVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+// add delegate
+        
         Numguests.delegate = self
         Numguests.becomeFirstResponder()
     }
