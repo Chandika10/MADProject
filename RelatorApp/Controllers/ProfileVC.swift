@@ -8,14 +8,27 @@
 import UIKit
 
 class ProfileVC: UIViewController {
-
+    @IBOutlet weak var Username: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let savedUsername = UserDefaults.standard.string(forKey: "username") {
+            print("Username: \(savedUsername)")
+            Username.text =  "Hello" + " " + savedUsername
+        } else {
+          
+            print("No username found")
+        }
     }
     
-
+    @IBAction func Favorite(_ sender: Any) {
+        
+    }
+    
+   
+    @IBAction func logout(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "username")
+    }
     /*
     // MARK: - Navigation
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7lQ-fY-5jU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7lQ-fY-5jU">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -79,7 +79,7 @@
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IBD-Bj-yv2">
-
+                                <rect key="frame" x="16" y="235" width="361" height="561"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="361" id="R9g-Eb-jOp"/>
@@ -280,6 +280,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Your Favorite"/>
+                                <connections>
+                                    <action selector="Favorite:" destination="mhT-QV-foe" eventType="touchUpInside" id="6Mb-d3-CfP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYU-Ud-R3Z">
                                 <rect key="frame" x="106.66666666666669" y="712" width="180" height="35"/>
@@ -291,6 +294,10 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="mhT-QV-foe" eventType="touchUpInside" id="SGM-UI-3jk"/>
+                                    <segue destination="7lQ-fY-5jU" kind="presentation" modalPresentationStyle="fullScreen" id="NaX-li-4lW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="saQ-3I-h2A"/>
@@ -342,7 +349,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER YOUR USERNAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bd-OD-4bM">
-                                <rect key="frame" x="29.666666666666657" y="142" width="334" height="37"/>
+                                <rect key="frame" x="29.666666666666657" y="83" width="334" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="334" id="dcB-rw-3m5"/>
                                     <constraint firstAttribute="height" constant="37" id="kp6-49-L0f"/>
@@ -352,7 +359,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiV-UJ-BcI">
-                                <rect key="frame" x="125" y="496" width="143" height="36"/>
+                                <rect key="frame" x="125" y="437" width="143" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="3ec-AA-J4o"/>
@@ -370,17 +377,21 @@
                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
-
+                                    <action selector="EnterAction:" destination="7lQ-fY-5jU" eventType="touchUpInside" id="QXk-wY-AxA"/>
+                                    <segue destination="v6I-xo-Wf5" kind="presentation" modalPresentationStyle="fullScreen" id="WOW-1h-4Dg"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please type your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CY4-aP-Gtu">
-                                <rect key="frame" x="29.666666666666657" y="222" width="334" height="34"/>
+                                <rect key="frame" x="29.666666666666657" y="163" width="334" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="PD9-aO-eJE"/>
                                     <constraint firstAttribute="width" constant="334" id="mb7-i5-FYU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7lQ-fY-5jU" id="VH9-bB-hgy"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qtN-N9-Jgw"/>
@@ -394,6 +405,9 @@
                             <constraint firstItem="CY4-aP-Gtu" firstAttribute="centerX" secondItem="qtN-N9-Jgw" secondAttribute="centerX" id="zDe-Qa-RSD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="username" destination="CY4-aP-Gtu" id="hko-od-3Y3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75e-Fv-Z2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -409,10 +423,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
