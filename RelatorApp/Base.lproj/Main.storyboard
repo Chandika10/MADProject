@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7lQ-fY-5jU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7lQ-fY-5jU">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -79,11 +79,10 @@
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IBD-Bj-yv2">
-                                <rect key="frame" x="16" y="246" width="361" height="550"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="361" id="R9g-Eb-jOp"/>
-                                    <constraint firstAttribute="height" constant="550" id="hP6-Ed-72r"/>
+                                    <constraint firstAttribute="height" constant="561" id="qQx-9d-OOF"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3UU-ow-AVk">
                                     <size key="itemSize" width="128" height="128"/>
@@ -143,15 +142,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" id="izG-dC-39V">
-                                <rect key="frame" x="85" y="144" width="197" height="184"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="oty-Xc-Zt8" id="9jR-Ou-ICo"/>
-                                    <outlet property="delegate" destination="oty-Xc-Zt8" id="slM-er-Fo8"/>
-                                </connections>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qM1-ox-Sjn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -161,8 +151,7 @@
                             <constraint firstItem="WLv-kJ-bXz" firstAttribute="top" secondItem="qM1-ox-Sjn" secondAttribute="top" constant="77" id="6hB-0e-VlQ"/>
                             <constraint firstItem="qM1-ox-Sjn" firstAttribute="trailing" secondItem="WLv-kJ-bXz" secondAttribute="trailing" constant="23" id="8j9-eW-VJj"/>
                             <constraint firstItem="3d4-Rb-Aqg" firstAttribute="top" secondItem="WLv-kJ-bXz" secondAttribute="bottom" constant="8" symbolic="YES" id="CUO-Lm-nff"/>
-                            <constraint firstItem="izG-dC-39V" firstAttribute="leading" secondItem="cbz-YF-hh7" secondAttribute="trailing" constant="8" symbolic="YES" id="Fjo-fV-jU4"/>
-                            <constraint firstItem="IBD-Bj-yv2" firstAttribute="top" secondItem="1kn-bY-sc3" secondAttribute="bottom" constant="16" id="Psm-62-334"/>
+                            <constraint firstItem="IBD-Bj-yv2" firstAttribute="top" secondItem="1kn-bY-sc3" secondAttribute="bottom" constant="5" id="Psm-62-334"/>
                             <constraint firstItem="1kn-bY-sc3" firstAttribute="top" secondItem="cbz-YF-hh7" secondAttribute="bottom" constant="7" id="Wi5-8Y-MCq"/>
                             <constraint firstItem="qM1-ox-Sjn" firstAttribute="trailing" secondItem="3d4-Rb-Aqg" secondAttribute="trailing" constant="9" id="Xow-Pa-1bN"/>
                             <constraint firstItem="cbz-YF-hh7" firstAttribute="leading" secondItem="qM1-ox-Sjn" secondAttribute="leading" constant="4" id="ezv-cc-3P7"/>
@@ -174,7 +163,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="EXPLORE" id="syq-8z-Sn1"/>
                     <connections>
+                        <outlet property="ExploreCollectionview" destination="IBD-Bj-yv2" id="GiR-uL-8st"/>
+                        <outlet property="Numguests" destination="3d4-Rb-Aqg" id="gqi-Ke-6lE"/>
                         <outlet property="Propertysearchbar" destination="1kn-bY-sc3" id="HoK-wT-8hc"/>
+                        <outlet property="datefield" destination="ci3-DB-s0Y" id="jxL-BH-VUN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttv-fq-1qN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -377,7 +369,7 @@
                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="v6I-xo-Wf5" kind="presentation" modalPresentationStyle="fullScreen" id="Esg-Jf-fD5"/>
+
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please type your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CY4-aP-Gtu">
