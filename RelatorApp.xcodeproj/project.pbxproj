@@ -13,6 +13,14 @@
 		5BFD78A02AF3A19B00C1A437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD789E2AF3A19B00C1A437 /* Main.storyboard */; };
 		5BFD78A22AF3A19C00C1A437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD78A12AF3A19C00C1A437 /* Assets.xcassets */; };
 		5BFD78A52AF3A19C00C1A437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD78A32AF3A19C00C1A437 /* LaunchScreen.storyboard */; };
+		5BFD78AD2AF409FC00C1A437 /* StructModals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78AC2AF409FC00C1A437 /* StructModals.swift */; };
+		5BFD78AF2AF40A0A00C1A437 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78AE2AF40A0A00C1A437 /* API.swift */; };
+		5BFD78B12AF40A3100C1A437 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78B02AF40A3100C1A437 /* ExploreCell.swift */; };
+		5BFD78B32AF40A4B00C1A437 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78B22AF40A4B00C1A437 /* ExploreVC.swift */; };
+		5BFD78B52AF40A6000C1A437 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78B42AF40A6000C1A437 /* FavoriteVC.swift */; };
+		5BFD78B72AF40A6E00C1A437 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78B62AF40A6E00C1A437 /* ProfileVC.swift */; };
+		5BFD78B92AF40A7E00C1A437 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78B82AF40A7E00C1A437 /* LoginVC.swift */; };
+		5BFD78BB2AF40AB000C1A437 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78BA2AF40AB000C1A437 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		5BFD78A12AF3A19C00C1A437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BFD78A42AF3A19C00C1A437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BFD78A62AF3A19C00C1A437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BFD78AC2AF409FC00C1A437 /* StructModals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructModals.swift; sourceTree = "<group>"; };
+		5BFD78AE2AF40A0A00C1A437 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5BFD78B02AF40A3100C1A437 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		5BFD78B22AF40A4B00C1A437 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
+		5BFD78B42AF40A6000C1A437 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		5BFD78B62AF40A6E00C1A437 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		5BFD78B82AF40A7E00C1A437 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5BFD78BA2AF40AB000C1A437 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +79,14 @@
 				5BFD78A12AF3A19C00C1A437 /* Assets.xcassets */,
 				5BFD78A32AF3A19C00C1A437 /* LaunchScreen.storyboard */,
 				5BFD78A62AF3A19C00C1A437 /* Info.plist */,
+				5BFD78AC2AF409FC00C1A437 /* StructModals.swift */,
+				5BFD78AE2AF40A0A00C1A437 /* API.swift */,
+				5BFD78B02AF40A3100C1A437 /* ExploreCell.swift */,
+				5BFD78B22AF40A4B00C1A437 /* ExploreVC.swift */,
+				5BFD78B42AF40A6000C1A437 /* FavoriteVC.swift */,
+				5BFD78B62AF40A6E00C1A437 /* ProfileVC.swift */,
+				5BFD78B82AF40A7E00C1A437 /* LoginVC.swift */,
+				5BFD78BA2AF40AB000C1A437 /* MapViewController.swift */,
 			);
 			path = RelatorApp;
 			sourceTree = "<group>";
@@ -138,9 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BFD78BB2AF40AB000C1A437 /* MapViewController.swift in Sources */,
 				5BFD789D2AF3A19B00C1A437 /* ViewController.swift in Sources */,
 				5BFD78992AF3A19B00C1A437 /* AppDelegate.swift in Sources */,
+				5BFD78AD2AF409FC00C1A437 /* StructModals.swift in Sources */,
+				5BFD78B72AF40A6E00C1A437 /* ProfileVC.swift in Sources */,
+				5BFD78B92AF40A7E00C1A437 /* LoginVC.swift in Sources */,
+				5BFD78B32AF40A4B00C1A437 /* ExploreVC.swift in Sources */,
+				5BFD78B52AF40A6000C1A437 /* FavoriteVC.swift in Sources */,
 				5BFD789B2AF3A19B00C1A437 /* SceneDelegate.swift in Sources */,
+				5BFD78AF2AF40A0A00C1A437 /* API.swift in Sources */,
+				5BFD78B12AF40A3100C1A437 /* ExploreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
