@@ -2,7 +2,7 @@
 //  StructModals.swift
 //  RelatorApp
 //
-//  Created by Chandika Karanam on 11/2/23.
+//  Created by Pavan Pullugundla on 11/2/23.
 //
 
 import Foundation
