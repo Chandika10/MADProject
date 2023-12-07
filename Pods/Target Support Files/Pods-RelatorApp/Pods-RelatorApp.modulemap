@@ -1,0 +1,6 @@
+framework module Pods_RelatorApp {
+  umbrella header "Pods-RelatorApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

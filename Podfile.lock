@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - FSCalendar (2.8.4)
+  - MBProgressHUD (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - FSCalendar
+  - MBProgressHUD (~> 1.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+
+PODFILE CHECKSUM: 7926c0fd0f7d8172c1a822ea8bed99c8b15a549a
+
+COCOAPODS: 1.14.3
