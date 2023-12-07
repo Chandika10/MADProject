@@ -22,6 +22,7 @@
 		5BFD78B72AF40A6E00C1A437 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78B62AF40A6E00C1A437 /* ProfileVC.swift */; };
 		5BFD78B92AF40A7E00C1A437 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD78B82AF40A7E00C1A437 /* LoginVC.swift */; };
 		8B4C96642B2232F900EC6881 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4C96632B2232F900EC6881 /* FilterVC.swift */; };
+		8B4C96682B2237DF00EC6881 /* favcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4C96672B2237DF00EC6881 /* favcell.swift */; };
 		912BBB6A2B22372500DE0141 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BBB692B22372500DE0141 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		5BFD78B82AF40A7E00C1A437 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5C2518E2D83C6120C59B62A9 /* Pods_RelatorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelatorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4C96632B2232F900EC6881 /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		8B4C96672B2237DF00EC6881 /* favcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favcell.swift; sourceTree = "<group>"; };
 		912BBB692B22372500DE0141 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		E31ABBE45253C531DC1AF56A /* Pods-RelatorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelatorApp.debug.xcconfig"; path = "Target Support Files/Pods-RelatorApp/Pods-RelatorApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5BFD78B02AF40A3100C1A437 /* ExploreCell.swift */,
+				8B4C96672B2237DF00EC6881 /* favcell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				5BFD78B32AF40A4B00C1A437 /* ExploreVC.swift in Sources */,
 				5BFD78B52AF40A6000C1A437 /* FavoriteVC.swift in Sources */,
 				5BFD789B2AF3A19B00C1A437 /* SceneDelegate.swift in Sources */,
+				8B4C96682B2237DF00EC6881 /* favcell.swift in Sources */,
 				5BFD78AF2AF40A0A00C1A437 /* API.swift in Sources */,
 				8B4C96642B2232F900EC6881 /* FilterVC.swift in Sources */,
 				5BFD78B12AF40A3100C1A437 /* ExploreCell.swift in Sources */,
